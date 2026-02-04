@@ -1,0 +1,130 @@
+body {
+  background: #181a20;
+  font-family: "Segoe UI", "Roboto", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #181a20;
+}
+
+.quiz-container {
+  background: #23262f;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  padding: 2.5em 2em 2em 2em;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+h2 {
+  margin-top: 0;
+  color: #4fc3f7;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.premise,
+.question {
+  margin: 1.2em 0 1em 0;
+  font-size: 1.1em;
+  color: #e3e6ed;
+}
+
+.premise strong,
+.question strong {
+  color: #4fc3f7;
+}
+
+.buttons {
+  margin: 1.5em 0 1em 0;
+}
+
+.buttons button {
+  margin: 0 1em;
+  padding: 0.7em 2.2em;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  background: #4fc3f7;
+  color: #181a20;
+  cursor: pointer;
+  transition:
+    background 0.18s,
+    transform 0.12s;
+  box-shadow: 0 2px 8px rgba(79, 195, 247, 0.13);
+}
+
+.buttons button:hover {
+  background: #0288d1;
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.feedback {
+  margin-top: 1.2em;
+  font-size: 1.15em;
+  font-weight: bold;
+  padding: 0.7em 0;
+  border-radius: 8px;
+}
+
+.feedback {
+  color: #fff;
+  background: #4fc3f7;
+  animation: fadeIn 0.3s;
+}
+
+.feedback:contains("Incorrect") {
+  background: #c62828;
+}
+
+.explanation {
+  margin-top: 1.2em;
+  background: #23262f;
+  color: #e3e6ed;
+  border-radius: 8px;
+  padding: 1em 1em 0.7em 1em;
+  box-shadow: 0 2px 8px rgba(44, 47, 58, 0.13);
+}
+
+.key-takeaway {
+  margin-top: 0.7em;
+  color: #ffd54f;
+}
+
+.next-btn {
+  background: #ffd54f;
+  color: #23262f;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7em 2.2em;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 1em;
+  box-shadow: 0 2px 8px rgba(255, 213, 79, 0.13);
+  transition:
+    background 0.18s,
+    transform 0.12s;
+}
+
+.next-btn:hover {
+  background: #ffb300;
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
